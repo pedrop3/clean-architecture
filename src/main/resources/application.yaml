@@ -1,0 +1,22 @@
+#============================================================================#
+# General configurations                                                     #
+#============================================================================#
+
+server:
+    port: 8080
+   
+---
+#============================================================================#
+# Local configurations                                                       #
+#============================================================================#
+spring:
+  datasource:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/store
+      username: postgres
+      password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
